@@ -32,9 +32,6 @@ h1,h2,h3,p,ul {
     padding: 0;
 }
 
-textarea{
-resize: none;
-}
 
 .container {
     width: 1200px;
@@ -930,3 +927,114 @@ img {
 }
 
 
+/* Форми */
+
+form{
+    /* width: 528px; */
+    /* outline: 2px solid tomato; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding-top: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.form-field{
+    /* outline: 2px solid blue; */
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-field input{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form-field .comment{
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+}
+
+.form-field .comment::placeholder {
+    /* font-family: 'Roboto'; */
+    /* font-style: normal; */
+    /* font-weight: 400; */
+    font-size: 12px;
+    line-height: 1.16;
+    /* letter-spacing: 0.01em; */
+
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.form-field label{
+    margin-bottom: 4px;
+
+    /* font-family: 'Roboto';
+    font-style: normal; */
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: var(--subtitle-text-color);
+}
+
+textarea {
+    resize: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.form-field input::placeholder{
+    /* font-family: 'Roboto'; */
+    /* font-style: normal; */
+    /* font-weight: 400; */
+    font-size: 12px;
+    line-height: 1.16;
+    /* letter-spacing: 0.01em; */
+
+    color: rgba(117, 117, 117, 0.5);
+}
+
+
+.title-form{
+    /* font-family: 'Roboto'; */
+    /* font-style: normal; */
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    /* letter-spacing: 0.03em; */
+
+    color: var(--title-text-color);
+
+    margin-top: 2px;
+}
+
+
+.button-form{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 30px;
+
+}
+
+.button-form button{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
