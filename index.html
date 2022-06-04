@@ -429,17 +429,17 @@
             </div>
 
             <div class="container-form">
-                <h3 class="form-title">Подпишитесь на рассылку</h3>
-                <form class="form-footer">                   
-                    <input type="email" name="mail" id="mail" placeholder="E-mail">     
-                    <!-- додати label -->
-                    <button type="submit">Подписаться</button>
-                                       
-                    
-                </form>
                 
-                
+                <form class="form-footer"> 
 
+                    <label class="form-title" for="email">Подпишитесь на рассылку</label>                  
+                    <input type="email" name="email" id="email" placeholder="E-mail">     
+                    
+
+                    <button type="submit">Подписаться</button>
+                                                           
+                </form>
+                               
             </div>
 
         </div>
@@ -463,30 +463,40 @@
             <h3 class="title-form">Оставьте свои данные, мы вам перезвоним</h3>
 
             <form class="form-modal">
-
-                <div class="form-field">
-                    <label for="name">Имя</label>
-                    <input type="text" name="name" id="name" placeholder="Имя">
+                
+                               
+               <div class="form-field">                   
+                    <input type="text" name="name" id="name" placeholder=" ">
+                    <label class="name" for="name">Имя</label>
+                    <svg class="icon" width="18px" height="18px">
+                        <use href="./image/sprite.svg#icon-person-black"></use>
+                    </svg>
+                </div>
+                
+                <div class="form-field">                   
+                    <input type="tel" name="tel" id="tel" placeholder=" ">
+                    <label class="tel" for="tel">Телефон</label>
+                    <svg class="icon" width="18px" height="18px">
+                        <use class="svg" href="./image/sprite.svg#icon-phone-black"></use>
+                    </svg>
+                </div>
+                
+                <div class="form-field">                   
+                    <input type="email" name="mail" id="mail" placeholder=" ">
+                    <label class="mail" for="mail">Почта</label>
+                    <svg class="icon" width="18px" height="18px">
+                        <use href="./image/sprite.svg#icon-email-black"></use>
+                    </svg>
                 </div>
                 
                 <div class="form-field">
-                    <label for="tel">Телефон</label>
-                    <input type="tel" name="tel" id="tel" placeholder="Телефон">
-                </div>
-                
-                <div class="form-field">
-                    <label for="mail">Почта</label>
-                    <input type="email" name="mail" id="mail" placeholder="Почта">
-                </div>
-                
-                <div class="form-field">
-                    <label for="comment">Комментарий</label>
-                    <textarea class="comment" name="comment" id="comment" cols="0" rows="5" placeholder="Введите текст"></textarea>
+                    <label class="comment" for="comment">Комментарий</label>
+                    <textarea name="comment" id="comment" cols="0" rows="5" placeholder="Введите текст"></textarea>
                 </div>
                                
                 <div class="form-field">
                     <input type="checkbox" name="policy" id="policy">
-                    <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                    <label for="policy">Соглашаюсь с рассылкой и принимаю <span><a href="" class="link-form"">Условия договора</a></span></label>
                 </div>
                 
                 
