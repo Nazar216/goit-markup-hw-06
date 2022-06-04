@@ -958,13 +958,26 @@ img {
     padding-right: 40px;
 }
 
-.form-field{
+.form-field:not(:last-child){
     /* outline: 2px solid blue; */
     margin-bottom: 28px;
     display: flex;
     flex-direction: column;
     position: relative;
    
+}
+
+
+.form-field:nth-child(3){
+    margin-bottom: 10px;
+}
+
+.form-field:nth-child(4){
+    margin-bottom: 20px;
+}
+
+.form-field:nth-child(5) {
+    display: block;
 }
 
 .form-field .name,
@@ -997,12 +1010,13 @@ img {
 .form-field input:focus + label,
 .form-field input:not(:placeholder-shown) + label{
     transform: translateY(-40px); 
+
 }
 
 
 .form-field .icon{
     position: absolute;
-    
+
     top: 50%;
     left: 12px;
     
@@ -1010,6 +1024,12 @@ img {
 
     cursor: pointer;
 }
+
+
+.form-field:hover .icon{
+    fill: var(--link-text-color);
+}
+
 
 
 /* .form-field input ~ .icon{
@@ -1031,10 +1051,24 @@ img {
     cursor: pointer;
 }
 
+.form-field input:hover,
+.form-field input:focus{
+    border: 1px solid var(--link-text-color);
+    outline: var(--link-text-color);
+    
+}
+
+
 .form-field textarea{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
+}
+
+.form-field textarea:hover,
+.form-field textarea:focus {
+    border: 1px solid var(--link-text-color);
+    outline: var(--link-text-color);
 }
 
 .form-field .comment{
@@ -1047,12 +1081,26 @@ img {
     margin-bottom: 4px;
 }
 
-textarea {
+.form-field .policy{
+
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+
+    color: var(--subtitle-text-color);
+
+}
+
+
+textarea{
     resize: none;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
+
+    width: 100%;
+    height: 120px;
 }
 
 
@@ -1133,11 +1181,20 @@ textarea {
     padding-right: 16px;
 
     background-color: #2F303A;
+    color: var(--primary-text-color);
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    cursor: pointer;
+    
 
+}
+
+.form-footer input:hover,
+.form-footer input:focus{
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    outline: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -1151,8 +1208,12 @@ textarea {
     height: 50px;
 
     margin-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 62px;
 
-    background: var(--link-text-color);
+    background-color: var(--link-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0;
@@ -1167,6 +1228,9 @@ textarea {
 
     color: var(--primary-text-color);
     cursor: pointer;
+
+    position: relative;
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
     
 }
 
@@ -1177,4 +1241,14 @@ textarea {
 
 .link-form{
     color: var(--link-text-color);
+}
+
+button .icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(50%);
+    margin-right: 28px;
+    
+
 }

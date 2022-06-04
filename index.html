@@ -436,7 +436,13 @@
                     <input type="email" name="email" id="email" placeholder="E-mail">     
                     
 
-                    <button type="submit">Подписаться</button>
+                    <button type="submit">
+                        <svg class="icon" width="24px" height="24px">
+                            <use href="./image/sprite.svg#icon-icon-send"></use>
+                        </svg>
+                        Подписаться
+                    </button>
+
                                                            
                 </form>
                                
@@ -463,8 +469,7 @@
             <h3 class="title-form">Оставьте свои данные, мы вам перезвоним</h3>
 
             <form class="form-modal">
-                
-                               
+                                               
                <div class="form-field">                   
                     <input type="text" name="name" id="name" placeholder=" ">
                     <label class="name" for="name">Имя</label>
@@ -477,7 +482,7 @@
                     <input type="tel" name="tel" id="tel" placeholder=" ">
                     <label class="tel" for="tel">Телефон</label>
                     <svg class="icon" width="18px" height="18px">
-                        <use class="svg" href="./image/sprite.svg#icon-phone-black"></use>
+                        <use href="./image/sprite.svg#icon-phone-black"></use>
                     </svg>
                 </div>
                 
@@ -491,12 +496,12 @@
                 
                 <div class="form-field">
                     <label class="comment" for="comment">Комментарий</label>
-                    <textarea name="comment" id="comment" cols="0" rows="5" placeholder="Введите текст"></textarea>
+                    <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
                 </div>
                                
                 <div class="form-field">
                     <input type="checkbox" name="policy" id="policy">
-                    <label for="policy">Соглашаюсь с рассылкой и принимаю <span><a href="" class="link-form"">Условия договора</a></span></label>
+                    <label class="policy" for="policy">Соглашаюсь с рассылкой и принимаю <span><a href="" class="link-form"">Условия договора</a></span></label>
                 </div>
                 
                 
@@ -504,8 +509,6 @@
                     <button type="submit">Отправить</button>
                 </div>
                 
-
-
             </form>
         </div>
     </div>
