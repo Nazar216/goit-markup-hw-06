@@ -584,7 +584,7 @@ img {
 
 .container-join{
     display: block;
-    padding-left: 81px;
+    margin-left: 81px;
     padding-top: 72px;
 
 }
@@ -1079,15 +1079,7 @@ img {
 
 }
 
-.form-field .policy{
 
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-
-    color: var(--subtitle-text-color);
-
-}
 
 
 textarea{
@@ -1161,6 +1153,13 @@ textarea{
 }
 
 
+.policy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 .checkbox{
     /* -webkit-appearance: none;
     -moz-appearance: none;
@@ -1169,50 +1168,43 @@ textarea{
     position: absolute;
     width: 1px;
     height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    /* clip: rect(0 0 0 0); */
-    /* overflow: hidden; */
-    /* background-color: tomato; */
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 
 }
 
 
-
-.checkbox:checked + .icon-rectangle{
-   background-color: var(--link-text-color);
+.checkbox:checked~.icon-rectangle{
+    display: none; 
 }
 
-
-.icon-rectangle{
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    position: relative;
-    /* background-color: #2196F3; */
+.checkbox:checked ~ .icon-checkbox{
+    display: block;
 }
 
 .icon-checkbox{
-    width: 16px;
-    height: 15px;
-    /* background-color: tomato; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-   
+    display: none;
 }
 
+.icon-rectangle{
+    display: block;
+}
 
+.form-text{
+    margin-left: 8px;
 
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: var(--subtitle-text-color);
+}
 
 
 /* Форма до футера */
 
 .container-form {
     display: block;
-    padding-left: 93px;
+    margin-left: 93px;
     padding-top: 72px;
 }
 
