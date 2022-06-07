@@ -496,6 +496,8 @@ img {
     
     color: var(--primary-text-color);
     background-color: var(--link-text-color);
+
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .button:hover{
@@ -580,7 +582,7 @@ img {
 
 }
 
-.container-join {
+.container-join{
     display: block;
     padding-left: 81px;
     padding-top: 72px;
@@ -933,17 +935,7 @@ img {
 
 }
 
-.form-title{
-    display: block;
-    margin-bottom: 20px;
-    
-    color: var(--primary-text-color);
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14 letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
+
 
 
 /* Форма до модального вікна  */
@@ -958,7 +950,7 @@ img {
     padding-right: 40px;
 }
 
-.form-field:not(:last-child){
+.form-field{
     /* outline: 2px solid blue; */
     margin-bottom: 28px;
     display: flex;
@@ -1007,8 +999,8 @@ img {
     
 }
 
-.form-field input:focus + label,
-.form-field input:not(:placeholder-shown) + label{
+.form-field .form-input:focus + label,
+.form-field .form-input:not(:placeholder-shown) + label{
     transform: translateY(-40px); 
 
 }
@@ -1023,6 +1015,8 @@ img {
     transform: translateY(-50%);
 
     cursor: pointer;
+
+    transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 
@@ -1037,7 +1031,7 @@ img {
     border-radius: 2px;
 } */
 
-.form-field input{
+.form-field .form-input{
     padding-left: 40px;
     padding-right: 16px;
     padding-top: 12px;
@@ -1049,19 +1043,22 @@ img {
     border-radius: 4px;
 
     cursor: pointer;
+
+    transition: border var(--transition-duration) var(--transition-timing-function);
 }
 
-.form-field input:hover,
-.form-field input:focus{
+.form-field .form-input:hover,
+.form-field .form-input:focus{
     border: 1px solid var(--link-text-color);
     outline: var(--link-text-color);
-    
 }
 
 
 .form-field textarea{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    transition: border var(--transition-duration) var(--transition-timing-function);
 
 }
 
@@ -1079,6 +1076,7 @@ img {
 
     color: var(--subtitle-text-color);
     margin-bottom: 4px;
+
 }
 
 .form-field .policy{
@@ -1136,7 +1134,7 @@ textarea{
 
     cursor: pointer;
 
-    background: var(--link-text-color);
+    background-color: var(--link-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0;
     border-radius: 4px;
@@ -1151,29 +1149,57 @@ textarea{
 
     color: var(--primary-text-color);
     
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .button-form button:hover{
     background-color: teal;
 }
 
+.link-form {
+    color: var(--link-text-color);
+}
 
-.form-link{
+
+.checkbox{
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; */
+    
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    /* clip: rect(0 0 0 0); */
+    /* overflow: hidden; */
+    background-color: tomato;
+
+}
+
+
+
+.chekbox:checked .icon-rectangle{
     background-color: #2196F3;
 }
 
 
+
+
+
+
+
+
 /* Форма до футера */
 
-.container-form {holder
+.container-form {
     display: block;
     padding-left: 93px;
     padding-top: 72px;
-
 }
 
-.form-footer input{
-    
+.form-footer input{  
     width: 358px;
     padding-left: 16px;
     padding-top: 15px;
@@ -1187,8 +1213,6 @@ textarea{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     cursor: pointer;
-    
-
 }
 
 .form-footer input:hover,
@@ -1239,9 +1263,7 @@ textarea{
 }
 
 
-.link-form{
-    color: var(--link-text-color);
-}
+
 
 button .icon{
     position: absolute;
@@ -1250,5 +1272,16 @@ button .icon{
     transform: translateY(50%);
     margin-right: 28px;
     
+}
 
+.form-title {
+    display: block;
+    margin-bottom: 20px;
+
+    color: var(--primary-text-color);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14 letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
