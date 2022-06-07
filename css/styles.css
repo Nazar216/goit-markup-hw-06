@@ -1167,25 +1167,42 @@ textarea{
     appearance: none; */
     
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 1px;
+    height: 1px;
     margin: -1px;
     border: 0;
     padding: 0;
     /* clip: rect(0 0 0 0); */
     /* overflow: hidden; */
-    background-color: tomato;
+    /* background-color: tomato; */
 
 }
 
 
 
-.chekbox:checked .icon-rectangle{
-    background-color: #2196F3;
+.checkbox:checked + .icon-rectangle{
+   background-color: var(--link-text-color);
 }
 
 
+.icon-rectangle{
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    position: relative;
+    /* background-color: #2196F3; */
+}
 
+.icon-checkbox{
+    width: 16px;
+    height: 15px;
+    /* background-color: tomato; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+   
+}
 
 
 
