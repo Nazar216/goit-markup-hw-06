@@ -204,12 +204,9 @@ img {
    
 }
 
-
-
 .item{
     position: relative;
 }
-
 
 .current::after {
     content: "";
@@ -223,8 +220,6 @@ img {
     border-radius: 2px;
 
 }
-
-
 
 
 /* Герой */
@@ -342,7 +337,6 @@ img {
 
 } */
 
-
 .image-position {
     position: relative;
 
@@ -358,7 +352,6 @@ img {
     height: 70px;
     background: rgba(47, 48, 58, 0.8);
     bottom: 0;
-
 }
 
 .title-position{
@@ -372,11 +365,7 @@ img {
     text-transform: uppercase;
 
     color: var(--primary-text-color);
-
 }
-
-
-
 
 
 .team-item{
@@ -400,7 +389,6 @@ img {
     /* outline: 2px solid tomato; */
 
     background-color: #F5F4FA;
-
 }
 
 .hero {
@@ -420,12 +408,10 @@ img {
     fill: #AFB1B8;
 
     transition: fill var(--transition-duration) var(--transition-timing-function);
-    
 }
 
 .link .icon:hover {
     fill: var(--primary-text-color);
-    
 }
 
 .social-links .link{
@@ -439,7 +425,6 @@ img {
     background-color: var(--primary-text-color);
 
     transition: background-color var(--transition-duration) var(--transition-timing-function);
-    
 }
 
 .social-links .link:hover{
@@ -464,12 +449,12 @@ img {
     text-transform: uppercase;
     text-align: center;
 
-    color: var(--primary-text-color);
-     
+    color: var(--primary-text-color); 
 }
 
 
 /* Колір заголовків посад команди */
+
 .subtitle-specialty{
 
     font-size: 16px;
@@ -504,14 +489,11 @@ img {
     background-color: teal;
 }
 
-
-
 /* Нова секція */
 
 .svg-list{
     display: flex;
 }
-
 
 .svg-list .section-icon{
     width: 170px;
@@ -536,7 +518,6 @@ img {
     align-items: center;
 }
 
-
 .icon-group{
     fill: #AFB1B8;
 
@@ -556,7 +537,6 @@ img {
 
 /* Футер */
 
-
 .footer-phone{
     width: 1600px;
     margin-left: auto;
@@ -572,24 +552,18 @@ img {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-
 }
 
 .container-footer{
     padding-top: 60px;
     padding-bottom: 60px;
-    
-
 }
 
 .container-join{
     display: block;
     margin-left: 81px;
     padding-top: 72px;
-
 }
-
-
 
 .join-title{
     margin-bottom: 20px;
@@ -600,15 +574,13 @@ img {
     font-size: 14px;
     line-height: 1.14
     letter-spacing: 0.03em;
-    text-transform: uppercase;  
-    
+    text-transform: uppercase;     
 }
 
 .link .icon{
     display: block;
     justify-content: center;
-    align-items: center;
-       
+    align-items: center;    
 }
 
 .link-join{
@@ -627,20 +599,16 @@ img {
     background: var(--link-text-color);
 }
 
-
 .social-links-join .item + .item{
     margin-left: 10px;
-    
 }
 
 /* .social-links-join .item:not(:last-child){
     margin-right: 10px;
 } */
 
-
 .social-links-join .icon{
-    fill: var(--primary-text-color);
-    
+    fill: var(--primary-text-color);  
 }
 
 .logo-studio-white{
@@ -652,6 +620,12 @@ img {
     letter-spacing: 0.03em;
 
     color: #FFFFFF;
+
+    transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.logo-studio-white:hover{
+    color: var(--link-text-color);
 }
 
 .city-address{
@@ -690,12 +664,9 @@ img {
     color: var(--link-text-color);
 }
 
-
-
 .social-links-join{
     display: flex;
 }
-
 
 /* Портфоліо */
 
@@ -720,7 +691,6 @@ img {
     transition: background-color var(--transition-duration) var(--transition-timing-function),
     color var(--transition-duration) var(--transition-timing-function),
     box-shadow var(--transition-duration) var(--transition-timing-function);
-    
 }
 
 .button-portfolio:hover,
@@ -733,12 +703,10 @@ img {
 .button-item{
     display:flex;
     justify-content: center;
-    
 }
 
 .button-item .item + .item{
-    margin-left: 8px;
-    
+    margin-left: 8px;  
 }
 
 .work-list .title{
@@ -755,7 +723,6 @@ img {
     letter-spacing: 0.06em;
 
     color: #212121;
-
 }
 
 .work-list .subtitle{
@@ -767,9 +734,7 @@ img {
     letter-spacing: 0.03em;
     color: #757575;
     margin-bottom: 20px;
-    margin-left: 24px;
-
-    
+    margin-left: 24px;   
 }
 
 .work-list{
@@ -783,9 +748,7 @@ img {
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
-    
 }
-
 
 .work-list li{
     margin-bottom: 30px;
@@ -802,15 +765,11 @@ img {
     text-decoration: none;
 
     transition: box-shadow var(--transition-duration) var(--transition-timing-function);
-
-    
 }
 
 .work-link:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-
 
 
 /* Виїзд тексту */
@@ -819,7 +778,6 @@ img {
     overflow: hidden;
     
     position: relative;
-
 }
 
 .subtitle-position{
@@ -848,15 +806,12 @@ img {
     transform: translateY(100%);
 
     transition: transform var(--transition-duration) var(--transition-timing-function);
-    
-
 }
 
 .work-link:hover .subtitle-position {
     opacity: 1;
 
     transform: translateY(0);
- 
 }
 
 
@@ -875,7 +830,6 @@ img {
     transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .modal{
     position: absolute;
     width: 528px;
@@ -889,20 +843,16 @@ img {
     transform: translate(-50%, -50%) scale(1);
 
     transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
-
 
 .backdrop.is-hidden .modal{
     transform: translate(-50%, -50%) scale(0);
 }
 
-
 .backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
 }
-
 
 .button-close{
     display: flex;
@@ -918,9 +868,7 @@ img {
     cursor: pointer;
 
     transition: fill var(--transition-duration) var(--transition-timing-function);
-    
 }
-
 
 .button-thumb{
     display: flex;
@@ -929,14 +877,10 @@ img {
     margin-right: 8px;
 }
 
-
 .button-close:hover{
     fill: var(--link-text-color);
 
 }
-
-
-
 
 /* Форма до модального вікна  */
 
@@ -955,10 +899,8 @@ img {
     margin-bottom: 28px;
     display: flex;
     flex-direction: column;
-    position: relative;
-   
+    position: relative; 
 }
-
 
 .form-field:nth-child(3){
     margin-bottom: 10px;
@@ -995,16 +937,13 @@ img {
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
 
 .form-field .form-input:focus + label,
 .form-field .form-input:not(:placeholder-shown) + label{
     transform: translateY(-40px); 
-
 }
-
 
 .form-field .icon{
     position: absolute;
@@ -1019,12 +958,9 @@ img {
     transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-
 .form-field:hover .icon{
     fill: var(--link-text-color);
 }
-
-
 
 /* .form-field input ~ .icon{
     background-color: blue;
@@ -1053,13 +989,11 @@ img {
     outline: var(--link-text-color);
 }
 
-
 .form-field textarea{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
     transition: border var(--transition-duration) var(--transition-timing-function);
-
 }
 
 .form-field textarea:hover,
@@ -1076,11 +1010,7 @@ img {
 
     color: var(--subtitle-text-color);
     margin-bottom: 4px;
-
 }
-
-
-
 
 textarea{
     resize: none;
@@ -1092,7 +1022,6 @@ textarea{
     width: 100%;
     height: 120px;
 }
-
 
 .title-form{
     /* font-family: 'Roboto'; */
@@ -1108,13 +1037,11 @@ textarea{
     margin-top: 2px;
 }
 
-
 .button-form{
     display: flex;
     justify-content: center;
 
     margin-top: 30px;
-
 }
 
 .button-form button{
@@ -1152,12 +1079,11 @@ textarea{
     color: var(--link-text-color);
 }
 
-
 .policy {
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    width: max-content;
+    margin-left: 12px;  
 }
 
 .checkbox{
@@ -1170,9 +1096,7 @@ textarea{
     height: 1px;
     clip: rect(0 0 0 0);
     overflow: hidden;
-
 }
-
 
 .checkbox:checked~.icon-rectangle{
     display: none; 
@@ -1235,7 +1159,6 @@ textarea{
     color: rgba(255, 255, 255, 0.6);
 }
 
-
 .form-footer button{
     width: 200px;
     height: 50px;
@@ -1263,24 +1186,19 @@ textarea{
     cursor: pointer;
 
     position: relative;
-    transition: background-color var(--transition-duration) var(--transition-timing-function);
-    
+    transition: background-color var(--transition-duration) var(--transition-timing-function);  
 }
 
 .form-footer button:hover{
     background-color: teal;
 }
 
-
-
-
 button .icon{
     position: absolute;
     right: 0;
     top: 0;
     transform: translateY(50%);
-    margin-right: 28px;
-    
+    margin-right: 28px; 
 }
 
 .form-title {
